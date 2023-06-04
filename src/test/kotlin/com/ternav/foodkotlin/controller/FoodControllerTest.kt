@@ -33,7 +33,7 @@ class FoodControllerTest {
         val foods = listOf(Pair("123", "Apple"), Pair("456", "Green Apple"))
         `when`(foodService.searchFoodByName("apple")).thenReturn(foods)
 
-        val result = mockMvc.perform(get("/foods/apple")
+        val result = mockMvc.perform(get("/apple")
             .contentType(MediaType.APPLICATION_JSON))
             .andExpect(status().isOk)
             .andExpect(jsonPath("$", hasSize<Any>(foods.size)))

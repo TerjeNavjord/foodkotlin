@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for green-cherry-4026 on 2023-06-02T14:55:12+02:00
+# fly.toml app configuration file generated for foodkotlin on 2023-06-04T10:49:24+02:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "green-cherry-4026"
+app = "foodkotlin"
 primary_region = "arn"
 
 [[services]]
@@ -22,7 +22,7 @@ primary_region = "arn"
     soft_limit = 20
 
   [[services.http_checks]]
-    interval = "10s"
+    interval = "1m0s"
     timeout = "2s"
     restart_limit = 0
-    path = "/foods/apple"
+    path = "/"
