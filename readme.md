@@ -4,6 +4,7 @@ This is a Spring Boot REST API written in Kotlin for returning data from a nutri
 There are simple tests for some of the files using JUnit, Mockito etc..
 
 The API is hosted in a docker-container on a 256mb ram vm, and available to test (wait a few seconds if the vm runs out of ram): <br />
+
 HATEOAS: <br /> 
 http://food.ternav.com/
 <br />
